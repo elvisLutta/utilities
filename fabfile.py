@@ -3,7 +3,6 @@ from fabric.api import *
 from fabric.context_managers import cd
 from fabric.contrib.files import sed
 
-# from ..keys import R_ROOT_PASS
 
 
 """
@@ -43,7 +42,7 @@ env.key_filename = result.split()[1]
 # local filesystem directory where prod_key.pub and authorized_keys
 # files are located (they will be scp'd to target host) don't include
 # a trailing slash note: the tilde will resolve to your home directory
-env.ssh_key_dir = '~/venv/towrec.com/towrec_project/ssh_keys'
+env.ssh_key_dir = '~/venv/your_project/your_project_project/ssh_keys'
 
 
 """
